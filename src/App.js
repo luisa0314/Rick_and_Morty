@@ -7,6 +7,7 @@ import {Routes, Route, useLocation, useNavigate} from 'react-router-dom';
 import About from './components/About';
 import Detail from './components/Detail';
 import Form from './components/Form';
+import Favorites from './components/Favorites'
 
 
 
@@ -20,7 +21,7 @@ function App() {
    const password = 'lui1234';
 
    const login = (userData) => {
-      if ( userData.email == email  && userData.password == password) {
+      if ( userData.email === email  && userData.password === password) {
          setAccess(true);
          navigate('/home');
       }
@@ -94,6 +95,7 @@ function App() {
          <Route path='/home' element={<Cards characters={characters} onClose={onClose} />}/>
          <Route path='/about' element={<About/>}/>
          <Route path='/detail/:id' element={<Detail/>}/>
+         <Route path='/favorites' element={<Favorites/>}/>
          
          </Routes>
          

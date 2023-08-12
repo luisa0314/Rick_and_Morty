@@ -1,7 +1,7 @@
 
 const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 const regexPassword = /^(?=.*?[a-z])(?=.*?[0-9]).{6,10}$/;
-const regexPassword2 = /.*\d+.*/;
+//const regexPassword2 = /.*\d+.*/;
 
 const validation = (userData) => {
 const errors = {}
